@@ -22,7 +22,7 @@ public class GestioCalculadoraGuiAvanzada {
      * l'excepció generada de tipus NumberFormatException és recollida en un 
      * catch i s'envia un missatge d'error a la vista.
      */
-    @Override
+    
     public void actionPerformed(ActionEvent e) {
         String accio = e.getActionCommand();
         try {
