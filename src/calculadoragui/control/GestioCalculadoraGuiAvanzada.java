@@ -1,12 +1,12 @@
+
 package calculadoragui.control;
 
 import calculadoragui.model.Operacions;
 import calculadoragui.vista.InterficieGrafica;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class GestioCalculadoraGuiAvanzada implements ActionListener {
 
+public class GestioCalculadoraGuiAvanzada {
     private InterficieGrafica ig;
     private Operacions opers;
 
@@ -86,5 +86,4 @@ public class GestioCalculadoraGuiAvanzada implements ActionListener {
             ig.mostrarMissatgeError("No es pot dividir per 0");
         }
     }
-
 }

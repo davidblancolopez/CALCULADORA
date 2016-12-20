@@ -1,18 +1,17 @@
+
 package calculadoragui.vista;
 
 import calculadoragui.control.GestioCalculadoraGui;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author j
- */
-public class InterficieGraficaAvanzada extends javax.swing.JFrame {
 
+public interface InterficieGraficaAvanzada {
+
+    
     private GestioCalculadoraGui gCal;
 
-    public InterficieGraficaAvanzada() {
+    public InterficieGrafica() {
         gCal = new GestioCalculadoraGui(this);
         initComponents();
         this.setLocationRelativeTo(null);// centra el formulari en la pantalla
@@ -243,6 +242,5 @@ public class InterficieGraficaAvanzada extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldOper1;
     private javax.swing.JTextField jTextFieldOper2;
     private javax.swing.JTextField jTextFieldResultat;
-    // End of variables declaration                   
+    // End of variables declaration         
 }
-
