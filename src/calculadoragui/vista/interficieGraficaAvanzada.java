@@ -5,7 +5,6 @@
  */
 package calculadoragui.vista;
 
-import calculadoragui.control.GestioCalculadoraGui;
 import calculadoragui.control.GestioCalculadoraGuiAvanzada;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
@@ -36,6 +35,11 @@ public class interficieGraficaAvanzada extends javax.swing.JFrame {
         jButtonDivisio.addActionListener(gCalAv);
         jButtonResta.addActionListener(gCalAv);
         jButtonMultiplicacio.addActionListener(gCalAv);
+        jButtonPotencia.addActionListener(gCalAv);
+        jButtonMaxim.addActionListener(gCalAv);
+        jButtonMinim.addActionListener(gCalAv);
+        jButtonPotencia.addActionListener(gCalAv);
+
     }
     
     
