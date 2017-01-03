@@ -1,16 +1,16 @@
 package calculadoragui.control;
 
 import calculadoragui.model.Operacions;
-import calculadoragui.vista.InterficieGrafica;
+import calculadoragui.vista.InterficieGraficaBasica;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GestioCalculadoraGui implements ActionListener {
 
-    private InterficieGrafica ig;
+    private InterficieGraficaBasica ig;
     private Operacions opers;
 
-    public GestioCalculadoraGui(InterficieGrafica ig) {
+    public GestioCalculadoraGui(InterficieGraficaBasica ig) {
         this.ig = ig;
         opers = new Operacions();
     }

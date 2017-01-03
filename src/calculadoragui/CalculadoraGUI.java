@@ -1,6 +1,6 @@
 package calculadoragui;
 
-import calculadoragui.vista.InterficieGrafica;
+import calculadoragui.vista.InterficieGraficaBasica;
 import javax.swing.SwingUtilities;
 
 public class CalculadoraGUI {
@@ -9,7 +9,7 @@ public class CalculadoraGUI {
                             SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
-                            InterficieGrafica intGraf = new InterficieGrafica();
+                            InterficieGraficaBasica intGraf = new InterficieGraficaBasica();
                             intGraf.setVisible(true);
                         }
                     });

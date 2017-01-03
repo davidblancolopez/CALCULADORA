@@ -2,15 +2,15 @@
 package calculadoragui.control;
 
 import calculadoragui.model.Operacions;
-import calculadoragui.vista.InterficieGrafica;
+import calculadoragui.vista.InterficieGraficaBasica;
 import java.awt.event.ActionEvent;
 
 
 public class GestioCalculadoraGuiAvanzada {
-    private InterficieGrafica ig;
+    private InterficieGraficaBasica ig;
     private Operacions opers;
 
-    public GestioCalculadoraGuiAvanzada(InterficieGrafica ig) {
+    public GestioCalculadoraGuiAvanzada(InterficieGraficaBasica ig) {
         this.ig = ig;
         opers = new Operacions();
     }
