@@ -23,6 +23,8 @@ public class InterficieGraficaBasica extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);// centra el formulari en la pantalla
         inicia();
     }
+
+    
 /**
  * Es configuren els objectes dels butons perquè la classe que farà de Listener
  * de l'esdeveniment click (tipus ActionEvent) serà GestioCalculadoraGui
