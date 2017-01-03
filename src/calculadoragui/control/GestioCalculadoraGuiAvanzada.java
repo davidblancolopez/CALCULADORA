@@ -1,18 +1,18 @@
 
 package calculadoragui.control;
 
-import calculadoragui.model.Operacions;
-import calculadoragui.vista.InterficieGraficaBasica;
+import calculadoragui.model.OperacionsAvanzades;
+import calculadoragui.vista.interficieGraficaAvanzada;
 import java.awt.event.ActionEvent;
 
 
 public class GestioCalculadoraGuiAvanzada {
-    private InterficieGraficaBasica ig;
-    private Operacions opers;
+    private interficieGraficaAvanzada ig;
+    private OperacionsAvanzades opers;
 
-    public GestioCalculadoraGuiAvanzada(InterficieGraficaBasica ig) {
+    public GestioCalculadoraGuiAvanzada(interficieGraficaAvanzada ig) {
         this.ig = ig;
-        opers = new Operacions();
+        opers = new OperacionsAvanzades();
     }
 
     /**
@@ -40,6 +40,22 @@ public class GestioCalculadoraGuiAvanzada {
                     break;
                 case "/":
                     divisio();
+                    break;
+                case ">":
+                    //Màxim
+                    maxim();
+                    break;
+                case "<":
+                    //Mínim
+                    minim();
+                    break;
+                case "pot":
+                    //Potencia
+                    potencia();
+                    break;
+                case "%":
+                    //Modul
+                    modul();
                     break;
             }
         } catch (NumberFormatException ex) {
@@ -86,4 +102,42 @@ public class GestioCalculadoraGuiAvanzada {
             ig.mostrarMissatgeError("No es pot dividir per 0");
         }
     }
+    
+    
+    /**
+     * Recull els valors dels operands i crida al metode que calcula 
+     * la potencia del opreand 1 amb el operand 2.
+     */
+    private void potencia() {
+        ig.setResultat(opers.potencia(ig.getOper1(), ig.getOper2()));
+    }
+    
+    
+    /**
+     * Recull els valors dels operands i crida al metode que comprova quin dels dos operands
+     * es més gran.
+     */
+    private void maxim() {
+        ig.setResultat(opers.maxim(ig.getOper1(), ig.getOper2()));
+    }
+    
+    
+    /**
+     * Recull els valors dels operands i crida al metode que comprova
+     * quin dels 2 operands es més petit.
+     */
+    private void minim() {
+        ig.setResultat(opers.minim(ig.getOper1(), ig.getOper2()));
+    }
+    
+    /**
+     * Recull els valors dels operands i crida al metode que calcula el
+     * modul del operand 1 amb el operand 2.
+     */
+    private void modul(){
+        ig.setResultat(opers.modul(ig.getOper1(), ig.getOper2()));
+    }
+    
+    
+    
 }

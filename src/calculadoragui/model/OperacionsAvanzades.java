@@ -2,7 +2,7 @@
 package calculadoragui.model;
 
 
-public class OperacionsAvanzades {
+public class OperacionsAvanzades extends Operacions{
  /**
      * Aquest metode calcula la potencia del valor op1 i la potencia es op2.
      * 
