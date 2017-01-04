@@ -4,9 +4,10 @@ package calculadoragui.control;
 import calculadoragui.model.OperacionsAvanzades;
 import calculadoragui.vista.InterficieGraficaAvanzada;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
-public class GestioCalculadoraGuiAvanzada {
+public class GestioCalculadoraGuiAvanzada implements ActionListener{
     private InterficieGraficaAvanzada ig;
     private OperacionsAvanzades opers;
 
@@ -49,7 +50,7 @@ public class GestioCalculadoraGuiAvanzada {
                     //Mínim
                     minim();
                     break;
-                case "pot":
+                case "POT":
                     //Potencia
                     potencia();
                     break;
@@ -109,7 +110,7 @@ public class GestioCalculadoraGuiAvanzada {
      * la potencia del opreand 1 amb el operand 2.
      */
     private void potencia() {
-        ig.setResultat(opers.potencia(ig.getOper1(), ig.getOper2()));
+        ig.setResultat(opers.potencia(ig.getOper1(), ig.getOper2()) );
     }
     
     

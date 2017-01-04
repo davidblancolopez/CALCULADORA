@@ -44,9 +44,9 @@ public class OperacionsAvanzades extends Operacions{
         double min;
         
         if (op1 > op2) {
-            min = op1;
-        }else{
             min = op2;
+        }else{
+            min = op1;
         }
         
         return min;
