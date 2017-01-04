@@ -15,9 +15,10 @@ import javax.swing.JOptionPane;
  */
 public class InterficieGraficaBasica extends javax.swing.JFrame {
 
+    private InterficieInicial inic;
     private GestioCalculadoraGui gCal;
 
-    public InterficieGraficaBasica() {
+    public InterficieGraficaBasica(InterficieInicial inic) {
         gCal = new GestioCalculadoraGui(this);
         initComponents();
         this.setLocationRelativeTo(null);// centra el formulari en la pantalla
